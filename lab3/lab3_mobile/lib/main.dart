@@ -43,7 +43,7 @@ class _MyHomePageState extends State<MyHomePage> {
     });
   }
 
-  void _resetCounter() { // Добавлено: Метод для сброса счетчика
+  void _resetCounter() {
     setState(() {
       _counter = 0;
     });
@@ -81,9 +81,9 @@ class _MyHomePageState extends State<MyHomePage> {
                 ),
               ],
             ),
-            TextButton( // Добавлено: Кнопка сброса
+            TextButton(
               style: TextButton.styleFrom(
-                foregroundColor: Colors.grey, // Серый цвет текста
+                foregroundColor: Colors.grey,
               ),
               onPressed: _resetCounter,
               child: const Text('Сбросить'),
@@ -91,6 +91,7 @@ class _MyHomePageState extends State<MyHomePage> {
           ],
         ),
       ),
+      // Убрано: FloatingActionButton больше не используется
     );
   }
 }
