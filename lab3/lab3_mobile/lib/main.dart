@@ -12,7 +12,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Инкремент',
       theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.blue), // Изменение цвета темы
+        colorScheme: ColorScheme.fromSeed(seedColor: Colors.blue),
       ),
       home: const MyHomePage(title: 'Инкремент'),
     );
@@ -37,6 +37,12 @@ class _MyHomePageState extends State<MyHomePage> {
     });
   }
 
+  void _decrementCounter() { // Добавлено: Метод для уменьшения счетчика
+    setState(() {
+      _counter--;
+    });
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -48,19 +54,31 @@ class _MyHomePageState extends State<MyHomePage> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
-            const Text('Значение инкремента:'), // Измененная надпись
+            const Text('Значение инкремента:'),
             Text(
               '$_counter',
               style: Theme.of(context).textTheme.headlineMedium,
             ),
+            const SizedBox(height: 20), // Добавлено: Пространство между элементами
+            Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: <Widget>[
+                IconButton( // Добавлено: Кнопка уменьшения
+                  icon: const Icon(Icons.remove),
+                  onPressed: _decrementCounter,
+                  tooltip: 'Уменьшить',
+                ),
+                IconButton( // Добавлено: Кнопка увеличения (заменяет FloatingActionButton)
+                  icon: const Icon(Icons.add),
+                  onPressed: _incrementCounter,
+                  tooltip: 'Увеличить',
+                ),
+              ],
+            ),
           ],
         ),
       ),
-      floatingActionButton: FloatingActionButton(
-        onPressed: _incrementCounter,
-        tooltip: 'Increment',
-        child: const Icon(Icons.add),
-      ),
+      floatingActionButton: null, // Убрано: FloatingActionButton больше не нужен
     );
   }
 }
