@@ -37,9 +37,15 @@ class _MyHomePageState extends State<MyHomePage> {
     });
   }
 
-  void _decrementCounter() { // Добавлено: Метод для уменьшения счетчика
+  void _decrementCounter() {
     setState(() {
       _counter--;
+    });
+  }
+
+  void _resetCounter() { // Добавлено: Метод для сброса счетчика
+    setState(() {
+      _counter = 0;
     });
   }
 
@@ -59,26 +65,32 @@ class _MyHomePageState extends State<MyHomePage> {
               '$_counter',
               style: Theme.of(context).textTheme.headlineMedium,
             ),
-            const SizedBox(height: 20), // Добавлено: Пространство между элементами
+            const SizedBox(height: 20),
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: <Widget>[
-                IconButton( // Добавлено: Кнопка уменьшения
+                IconButton(
                   icon: const Icon(Icons.remove),
                   onPressed: _decrementCounter,
                   tooltip: 'Уменьшить',
                 ),
-                IconButton( // Добавлено: Кнопка увеличения (заменяет FloatingActionButton)
+                IconButton(
                   icon: const Icon(Icons.add),
                   onPressed: _incrementCounter,
                   tooltip: 'Увеличить',
                 ),
               ],
             ),
+            TextButton( // Добавлено: Кнопка сброса
+              style: TextButton.styleFrom(
+                foregroundColor: Colors.grey, // Серый цвет текста
+              ),
+              onPressed: _resetCounter,
+              child: const Text('Сбросить'),
+            ),
           ],
         ),
       ),
-      floatingActionButton: null, // Убрано: FloatingActionButton больше не нужен
     );
   }
 }
