@@ -74,7 +74,7 @@ class _DormitoryScreenState extends State<DormitoryScreen> {
       body: SingleChildScrollView(
         child: Column(
           children: [
-            Image.asset('assets/images/kubgau1.jpg', fit: BoxFit.cover),
+            Image.asset('assets/kubgau1.jpg', fit: BoxFit.cover),
             Padding(
               padding: const EdgeInsets.all(16.0),
               child: Row(
