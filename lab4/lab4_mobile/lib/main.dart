@@ -40,8 +40,8 @@ class _DormitoryScreenState extends State<DormitoryScreen> {
     print('Идет вызов....');
   }
 
-  void _showRoute() {
-    print('Точка1 -> Точка2 -> Точка3 -> Общежитие №20');
+  void _sendTelegram() {
+    print('Сообщение отправлено в Telegram');
   }
 
   void _share() {
@@ -54,72 +54,104 @@ class _DormitoryScreenState extends State<DormitoryScreen> {
       appBar: AppBar(
         title: const Text('Общежития КубГАУ'),
         backgroundColor: Colors.green,
+        actions: [
+          Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: Container(
+              padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
+              decoration: BoxDecoration(
+                color: Colors.red,
+                borderRadius: BorderRadius.circular(8),
+              ),
+              child: const Text(
+                'DEBUG',
+                style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold),
+              ),
+            ),
+          ),
+        ],
       ),
-      body: Column(
-        children: [
-          Image.asset('assets/dorm.jpg', fit: BoxFit.cover),
-          const Padding(
-            padding: EdgeInsets.all(16.0),
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
+      body: SingleChildScrollView(
+        child: Column(
+          children: [
+            Image.asset('assets/kubgau1.jpg', fit: BoxFit.cover),
+            Padding(
+              padding: const EdgeInsets.all(16.0),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: const [
+                      Text(
+                        'Общежитие №20',
+                        style: TextStyle(fontSize: 22, fontWeight: FontWeight.bold),
+                      ),
+                      SizedBox(height: 8),
+                      Text(
+                        'Краснодар, ул. Калинина, 13',
+                        style: TextStyle(fontSize: 16, color: Colors.grey),
+                      ),
+                    ],
+                  ),
+                  Column(
+                    children: [
+                      IconButton(
+                        icon: const Icon(Icons.favorite, color: Colors.red, size: 32),
+                        onPressed: _incrementLikes,
+                      ),
+                      Text('$likes', style: const TextStyle(fontWeight: FontWeight.bold)),
+                    ],
+                  ),
+                ],
+              ),
+            ),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
-                Text(
-                  'Общежитие №20',
-                  style: TextStyle(fontSize: 22, fontWeight: FontWeight.bold),
+                Column(
+                  children: [
+                    IconButton(
+                      icon: const Icon(Icons.call, color: Colors.green, size: 36),
+                      onPressed: _makeCall,
+                    ),
+                    const Text('Позвонить', style: TextStyle(fontWeight: FontWeight.bold)),
+                  ],
                 ),
-                SizedBox(height: 8),
-                Text(
-                  'Краснодар, ул. Калинина, 13',
-                  style: TextStyle(fontSize: 16, color: Colors.grey),
+                Column(
+                  children: [
+                    IconButton(
+                      icon: const Icon(Icons.telegram, color: Colors.blue, size: 36),
+                      onPressed: _sendTelegram,
+                    ),
+                    const Text('Telegram', style: TextStyle(fontWeight: FontWeight.bold)),
+                  ],
+                ),
+                Column(
+                  children: [
+                    IconButton(
+                      icon: const Icon(Icons.share, color: Colors.green, size: 36),
+                      onPressed: _share,
+                    ),
+                    const Text('Поделиться', style: TextStyle(fontWeight: FontWeight.bold)),
+                  ],
                 ),
               ],
             ),
-          ),
-          Row(
-            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-            children: [
-              Column(
-                children: [
-                  IconButton(
-                    icon: const Icon(Icons.favorite, color: Colors.red),
-                    onPressed: _incrementLikes,
-                  ),
-                  Text('$likes'),
-                ],
+            const Padding(
+              padding: EdgeInsets.all(16.0),
+              child: Text(
+                'Студенческий городок или так называемый кампус Кубанского ГАУ состоит из двадцати общежитий, в которых проживает более 8000 студентов, что состав- ляет 96% от всех нуждающихся. Студенты первого курса обеспечены местами в об- щежитии полностью. В соответствии с Положением о студенческих общежитиях университета, при поселении между администрацией и студентами заключается договор найма жилого помещения. Воспитательная работа в общежитиях направ- лена на улучшение быта, соблюдение правил внутреннего распорядка, отсутствия асоциальных явлений в молодежной среде. Условия проживания в общежитиях университетского кампуса полностью отвечают санитарным нормам и требова- ниям: наличие оборудованных кухонь, душевых комнат, прачечных, читальных за- лов, комнат самоподготовки, помещений для заседаний студенческих советов и наглядной агитации. С целью улучшения условий быта студентов активно работает система студенческого самоуправления - студенческие советы организуют всю ра- боту по самообслуживанию.',
+                style: TextStyle(fontSize: 16),
+                textAlign: TextAlign.justify,
               ),
-              Column(
-                children: [
-                  IconButton(
-                    icon: const Icon(Icons.call, color: Colors.green),
-                    onPressed: _makeCall,
-                  ),
-                  const Text('Позвонить'),
-                ],
-              ),
-              Column(
-                children: [
-                  IconButton(
-                    icon: const Icon(Icons.directions, color: Colors.green),
-                    onPressed: _showRoute,
-                  ),
-                  const Text('Маршрут'),
-                ],
-              ),
-              Column(
-                children: [
-                  IconButton(
-                    icon: const Icon(Icons.share, color: Colors.green),
-                    onPressed: _share,
-                  ),
-                  const Text('Поделиться'),
-                ],
-              ),
-            ],
-          ),
-        ],
+            ),
+          ],
+        ),
       ),
     );
   }
 }
+
 
 
