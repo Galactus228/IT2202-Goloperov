@@ -20,8 +20,33 @@ class MyApp extends StatelessWidget {
   }
 }
 
-class DormitoryScreen extends StatelessWidget {
+class DormitoryScreen extends StatefulWidget {
   const DormitoryScreen({super.key});
+
+  @override
+  State<DormitoryScreen> createState() => _DormitoryScreenState();
+}
+
+class _DormitoryScreenState extends State<DormitoryScreen> {
+  int likes = 27;
+
+  void _incrementLikes() {
+    setState(() {
+      likes++;
+    });
+  }
+
+  void _makeCall() {
+    print('Идет вызов....');
+  }
+
+  void _showRoute() {
+    print('Точка1 -> Точка2 -> Точка3 -> Общежитие №20');
+  }
+
+  void _share() {
+    print('Отправлено');
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -32,7 +57,7 @@ class DormitoryScreen extends StatelessWidget {
       ),
       body: Column(
         children: [
-          Image.asset('assets/kubgau1.jpg', fit: BoxFit.cover),
+          Image.asset('assets/dorm.jpg', fit: BoxFit.cover),
           const Padding(
             padding: EdgeInsets.all(16.0),
             child: Column(
@@ -50,9 +75,51 @@ class DormitoryScreen extends StatelessWidget {
               ],
             ),
           ),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+            children: [
+              Column(
+                children: [
+                  IconButton(
+                    icon: const Icon(Icons.favorite, color: Colors.red),
+                    onPressed: _incrementLikes,
+                  ),
+                  Text('$likes'),
+                ],
+              ),
+              Column(
+                children: [
+                  IconButton(
+                    icon: const Icon(Icons.call, color: Colors.green),
+                    onPressed: _makeCall,
+                  ),
+                  const Text('Позвонить'),
+                ],
+              ),
+              Column(
+                children: [
+                  IconButton(
+                    icon: const Icon(Icons.directions, color: Colors.green),
+                    onPressed: _showRoute,
+                  ),
+                  const Text('Маршрут'),
+                ],
+              ),
+              Column(
+                children: [
+                  IconButton(
+                    icon: const Icon(Icons.share, color: Colors.green),
+                    onPressed: _share,
+                  ),
+                  const Text('Поделиться'),
+                ],
+              ),
+            ],
+          ),
         ],
       ),
     );
   }
 }
+
 
