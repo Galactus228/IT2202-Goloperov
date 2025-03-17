@@ -1,0 +1,1 @@
+ C:\\Users\\User\\mobile\\lab3\\lab3_mobile\\.dart_tool\\flutter_build\\371d584a82b643c1e6a53ea3b1087a06\\dart_build_result.json: 
