@@ -1,0 +1,236 @@
+{
+   "checksum": "7dd61580b361b294ebdd9e639614b24f",
+   "roots": {
+      "bookmark_bar": {
+         "children": [ {
+            "date_added": "13166119166831416",
+            "date_last_used": "0",
+            "guid": "546f72db-1b3a-4410-9c9a-a4677d7f0db0",
+            "id": "6",
+            "name": "Авиабилеты",
+            "show_icon": false,
+            "source": "sync",
+            "type": "url",
+            "url": "https://avia.yandex.ru/?win=310&clid=2255400-225&utm_source=distribution&utm_medium=bookmark_none&utm_campaign=ru",
+            "visit_count": 0
+         }, {
+            "date_added": "13166119166831444",
+            "date_last_used": "0",
+            "guid": "7f3c5ce0-2dff-4e61-901a-147bbe16eff1",
+            "id": "7",
+            "name": "Яндекс",
+            "show_icon": false,
+            "source": "sync",
+            "type": "url",
+            "url": "https://www.yandex.ru/?win=310&clid=2255400-225&from=dist_bookmark",
+            "visit_count": 0
+         }, {
+            "date_added": "13198192272918617",
+            "date_last_used": "0",
+            "guid": "eec8a74d-0f44-4848-a81f-d626a6b862c2",
+            "id": "8",
+            "name": "Что делать, если не печатает один из цветов",
+            "show_icon": false,
+            "source": "sync",
+            "type": "url",
+            "url": "https://www.originalam.net/instruction/ne-pechatayet-1-tsvet.html",
+            "visit_count": 0
+         }, {
+            "date_added": "13198192372485567",
+            "date_last_used": "0",
+            "guid": "dbce81b9-d6a5-4765-b80c-c76ddeb3ee96",
+            "id": "9",
+            "name": "Не печатает черный цвет в принтере Epson, Canon, HP: программные и аппаратные причины",
+            "show_icon": false,
+            "source": "sync",
+            "type": "url",
+            "url": "https://hitech-online.ru/kompyutery-orgtehnika/printer/ne-pechataet-chernym-tsvetom.html",
+            "visit_count": 0
+         }, {
+            "date_added": "13246816542699893",
+            "date_last_used": "0",
+            "guid": "40a0390e-1541-4186-b3f5-27f9f65d2ac8",
+            "id": "10",
+            "name": "Сервер | Aternos | Бесплатный сервер Minecraft",
+            "show_icon": false,
+            "source": "sync",
+            "type": "url",
+            "url": "https://aternos.org/server/",
+            "visit_count": 0
+         }, {
+            "date_added": "13253388263543562",
+            "date_last_used": "0",
+            "guid": "8b3eec5d-02cd-4fcc-b99c-875dc2b664ac",
+            "id": "11",
+            "name": "Звёздные войны: Войны клонов 1,2,3,4,5,6,7 сезон смотреть онлайн в HD качестве. LostFilm",
+            "show_icon": false,
+            "source": "sync",
+            "type": "url",
+            "url": "http://www.lostfilmhd.ru/publ/serialy/zvjozdnye_vojny_vojny_klonov_01/1-1-0-184",
+            "visit_count": 0
+         }, {
+            "date_added": "13255183123651584",
+            "date_last_used": "0",
+            "guid": "5271dc34-5810-4c08-8e62-750cd9ad6054",
+            "id": "12",
+            "name": "Как установить DLL файлы на Windows 7,8,10 вручную",
+            "show_icon": false,
+            "source": "sync",
+            "type": "url",
+            "url": "http://dlltop.ru/kak-ustanovit-dll-fajl",
+            "visit_count": 0
+         }, {
+            "date_added": "13257020714842437",
+            "date_last_used": "0",
+            "guid": "04287307-1986-4861-a480-4943ce460ab9",
+            "id": "13",
+            "name": "ВандаВижен 1 сезон смотреть онлайн!",
+            "show_icon": false,
+            "source": "sync",
+            "type": "url",
+            "url": "https://all-episodes.org/wandavision/season1a",
+            "visit_count": 0
+         }, {
+            "date_added": "13258935391929842",
+            "date_last_used": "0",
+            "guid": "bea92733-19fc-4969-8a9b-4be19d35fb05",
+            "id": "14",
+            "name": "Настроить источник восстановления Windows | Документы Microsoft",
+            "show_icon": false,
+            "source": "sync",
+            "type": "url",
+            "url": "https://docs.microsoft.com/ru-ru/windows-hardware/manufacture/desktop/configure-a-windows-repair-source",
+            "visit_count": 0
+         }, {
+            "date_added": "13334259317011475",
+            "date_last_used": "0",
+            "guid": "55ea1419-a686-40e3-b6e8-f7b7cfeb4ac1",
+            "id": "15",
+            "name": "Секретное вторжение 1 сезон 5 серия смотреть онлайн бесплатно!",
+            "show_icon": false,
+            "source": "sync",
+            "type": "url",
+            "url": "https://marvel-online.ru/sezon-1/seria-5/?ysclid=lk9yfzies1640976821",
+            "visit_count": 0
+         }, {
+            "date_added": "13336408788078159",
+            "date_last_used": "0",
+            "guid": "75516718-896a-435c-9d51-591fb8b312bd",
+            "id": "16",
+            "name": "",
+            "show_icon": false,
+            "source": "sync",
+            "type": "url",
+            "url": "https://www.youtube.com/",
+            "visit_count": 0
+         }, {
+            "date_added": "13351978221362365",
+            "date_last_used": "0",
+            "guid": "07272712-0d0d-48ff-87a8-7e6a8f1872f3",
+            "id": "17",
+            "meta_info": {
+               "power_bookmark_meta": ""
+            },
+            "name": "Краснодар: последние новости на сегодня, самые свежие сведения | 93.ру - новости Краснодара",
+            "show_icon": false,
+            "source": "sync",
+            "type": "url",
+            "url": "https://93.ru/text/tags/krasnodar/",
+            "visit_count": 0
+         }, {
+            "date_added": "13352038497614288",
+            "date_last_used": "0",
+            "guid": "78674c9a-d13a-4eb6-946c-bf5e2151c8bd",
+            "id": "18",
+            "meta_info": {
+               "power_bookmark_meta": ""
+            },
+            "name": "Новости — наше призвание на РЕН ТВ",
+            "show_icon": false,
+            "source": "sync",
+            "type": "url",
+            "url": "https://ren.tv/?ysclid=lsg016j9o5741037679",
+            "visit_count": 0
+         }, {
+            "date_added": "13352038557404422",
+            "date_last_used": "0",
+            "guid": "186ae7eb-2629-4dcd-b5ec-2b794e7b91be",
+            "id": "19",
+            "meta_info": {
+               "power_bookmark_meta": ""
+            },
+            "name": "Новости: Главные новости сегодня, самые свежие и последние новости России онлайн",
+            "show_icon": false,
+            "source": "sync",
+            "type": "url",
+            "url": "https://dzen.ru/news/?issue_tld=ru&utm_referrer=ya.ru",
+            "visit_count": 0
+         } ],
+         "date_added": "13386447800668737",
+         "date_last_used": "0",
+         "date_modified": "13352038557404422",
+         "guid": "0bc5d13f-2cba-5d74-951f-3f233fe6c908",
+         "id": "1",
+         "name": "Панель избранного",
+         "source": "unknown",
+         "type": "folder"
+      },
+      "other": {
+         "children": [  ],
+         "date_added": "13386447800668739",
+         "date_last_used": "0",
+         "date_modified": "0",
+         "guid": "82b081ec-3dd3-529c-8475-ab6c344590dd",
+         "id": "2",
+         "name": "Другое избранное",
+         "source": "unknown",
+         "type": "folder"
+      },
+      "synced": {
+         "children": [ {
+            "date_added": "13166119166831456",
+            "date_last_used": "0",
+            "guid": "6bc6a075-0675-41d3-8d9e-15904b7787dc",
+            "id": "20",
+            "name": "Авиабилеты",
+            "show_icon": false,
+            "source": "sync",
+            "type": "url",
+            "url": "https://avia.yandex.ru/?win=310&clid=2255400-225&utm_source=distribution&utm_medium=bookmark_none&utm_campaign=ru",
+            "visit_count": 0
+         }, {
+            "date_added": "13166119166831463",
+            "date_last_used": "0",
+            "guid": "a1edd272-d538-4663-b0f4-627727054722",
+            "id": "21",
+            "name": "Яндекс",
+            "show_icon": false,
+            "source": "sync",
+            "type": "url",
+            "url": "https://www.yandex.ru/?win=310&clid=2255400-225&from=dist_bookmark",
+            "visit_count": 0
+         }, {
+            "date_added": "13175678017876432",
+            "date_last_used": "0",
+            "guid": "565c7954-cbe8-4cb7-99a4-fd2e8539b67d",
+            "id": "22",
+            "name": "Super Smash Flash 2 - Play Free Online Games - Snokido",
+            "show_icon": false,
+            "source": "sync",
+            "type": "url",
+            "url": "http://www.snokido.com/game/super-smash-flash-2",
+            "visit_count": 0
+         } ],
+         "date_added": "13386447800668740",
+         "date_last_used": "0",
+         "date_modified": "13175678017876432",
+         "guid": "4cf2e351-0e85-532b-bb37-df045d8f8d0f",
+         "id": "3",
+         "name": "Избранное на мобильных устройствах",
+         "source": "unknown",
+         "type": "folder"
+      }
+   },
+   "sync_metadata": "CkEKHgiIgQISCFbXvpWVAQAAKg4QABgBIAAoBjAAOABAABIAKhh2OFZRMExlS0JYZEc5S0VPMHR6SVZnPT1IA6AGDBKOAQgCEokBChxZY1NUb252RVNQd3FDczRMMmNyVmh2NjhMOTg9EiQ4YTFmMmYzMS02ZTAxLTU1OTctOTkwMS1kZGE5ODMwMTNlNjEYACAAKAAw8PfN7bcvOMGGpaLtL0DBhqWi7S9KHG9QVmtod0JSYlY2NUtDV1IyK0lPTkhXb091OD1aAGUAAAAAwj4CYAASjgEIAxKJAQocbmpnRHU4OGVDcnZYcDg2cEQ3ZkhHY3FGcDg4PRIkM2Y2YjcxODItZDAwZS01YmQ1LTkwMDQtMmMzNjgxMGMwMmQ0GAAgACgAMPD3ze23LzihhqWi7S9AoYalou0vShx5ek5CMDFjbjU0QTdjUlUwdVQrL1BnbVR0VW89WgBlAAAAAMI+AmAAEq4BCBMSqQEKHDNoZEtJSnE0cmFRUTVYSVd3M0RGdVJEVy9LST0SJDE4NmFlN2ViLTI2MjktNGRjZC1iNWVjLTJiNzk0ZTdiOTFiZRgAIAAoADDu/vzg2TE4rZK2ltkxQK2StpbZMUocZlk5aHlNRi9Mekw2WXRzSHljemlYNTBBVmIwPVogIh7/+1BaZHhqY0szeE5vSXk4cHVsc1lKd2kwS01lbz1la8u2W8I+AmAFEq4BCBISqQEKHEFnRkpGdldIb3pzdWtXeWhGZU5FZG5tZ1VKYz0SJDc4Njc0YzlhLWQxM2EtNGViNi05NDZjLWJmNWUyMTUxYzhiZBgAIAAoADDv/vzg2TE4nL+yltkxQJy/spbZMUocbURmdng3NkxlOEx2YWhvYnJWUytHNnVNR2dZPVogIh7/9ytoa1Uya2tXdDJGeUVoK0w1MVhrTGlxenQ2cz1l5kjDvMI+AmAFEq4BCBESqQEKHGZtUDZtYkIwelA0UTJVdDcvRElxWkhjMWk4az0SJDA3MjcyNzEyLTBkMGQtNDhmZi04N2E4LTdlNmE4ZjE4NzJmMxgAIAAoADDt/vzg2TE4rMXT+dgxQKzF0/nYMUocOFFUamJDeUlzS1Bvd1lsN1RaMXk4dVdzZG5BPVogIh7/708yd2s1RnRhVGNLaHgrOElkSnU4MWtUY1IxND1lPPXKI8I+AmAFEq4BCBASqQEKHHVqT0w4Nkh3eExJb2Q5cGRFN1ZONndMRDZLdz0SJDc1NTE2NzE4LTg5NmEtNDM1Yy05ZDUxLTU5MWZiOGIzMTJiZBgAIAAoADCbz9XoujI4+9+furIxQPvfn7qyMUocTlN3cEZqV3h4R3o1NVFFNzAwbTFsMThKbDNjPVogIh7/3kRKaTRqODFXYnJDVVpIa1VVQUtiZ1hWMEtVTT1l/ZyMSsI+AmAFEq0BCAwSqAEKHHQzcUtiazdOcG5pY2RuYmpJbHdqSUczYk1jTT0SJDUyNzFkYzM0LTU4MTAtNGMwOC04ZTYyLTc1MGNkOWFkNjA1NBgAIAAoADDLyvza+jE4h9yf5ZIxQIfcn+WSMUocNjBFcVBIYkthVDBiK1FaRS95SlF0WW9JYXBrPVofIh39TTZiREZqUjY2ZzljYU5TeHp3MzdHeXRySVVzPWXsclPJwj4CYAUSrQEIDRKoAQoccXljNnNoanZ6TE14dVFlTjFncnRxTmszMmtNPRIkMDQyODczMDctMTk4Ni00ODYxLWE0ODAtNDk0M2NlNDYwYWI5GAAgACgAMMzK/Nr6MTif3p/lkjFAn96f5ZIxShxrSnRWTDdRMXFwWE9CK3NvOUZLQnRJMHR0UmM9Wh8iHf5YRzBSUCtCWWw5ckxnOHBRZEhDNzNxWjF1MGM9ZfHEcTvCPgJgBRKsAQgWEqcBChxmck9wM1R2eFRIMjd0eDdxMU94dm1RT2dUWkE9EiQ1NjVjNzk1NC1jYmU4LTRjYjctOTlhNC1mZDJlODUzOWI2N2QYACAAKAAwoNif5ZIxONvcn+WSMUDb3J/lkjFKHHF3U1Ayby9OWTQwbFpIbTlLaUNXRHREd2ZIUT1aHiIcd3RJMlU5MHFYeWxDdkZtbGs5bzJhRlFSUlprPWW08uUIwj4CYAUSrQEICBKoAQocM3lwWUR4V3dIUEdRd2t1UnE2SVFDTU14Mkc4PRIkZWVjOGE3NGQtMGY0NC00ODQ4LWE4MWYtZDYyNmE2Yjg2MmMyGAAgACgAMMrK/Nr6MTiD3p/lkjFAg96f5ZIxShx1TUZ5MXN1OEo2ejAvY1Y5Z0x3Mk45SGZDbnc9Wh8iHadGbTdEY0p5NlhGcTJORXBxNTMyQ2ZISFRXbnc9ZYMTZpvCPgJgBRKuAQgPEqkBChxxd3RyRmk1cS9UcEFxbEFBSHBvSThXVkFwSU09EiQ1NWVhMTQxOS1hNjg2LTQwZTMtYjZlOC1mN2I3Y2ZlYjRhYzEYACAAKAAwqO/8+b8yOOffn7qyMUDn35+6sjFKHG42Q09RMnFpREhtcUJLYndBRjVaMkoxNzZ5ST1aICIe/7wvdlFYWG44N01CRVdiQ1VIN3M4NmxmWFJVaVk9ZfG2Al7CPgJgBRKtAQgLEqgBChwrSGtXTWVKOHZ4dUcyR0krQVA3Q2NlTHJ2Ym89EiQ4YjNlZWM1ZC0wMmNkLTRmY2MtYjk5Yy04NzVkYzJiNjY0YWMYACAAKAAwycr82voxOJLdn+WSMUCS3Z/lkjFKHDB1YnlwKyt1Q0V2eEtPZW9yMStFVWJwWFNlbz1aHyId+lExSWpyQk5URFVnc2pMZVhUVVJHd2d1WHhRMD1lBPq1D8I+AmAFEq0BCAoSqAEKHHhOR2w1UXlNZWthOXk0Ukh2R0pHOStOdUdkdz0SJDQwYTAzOTBlLTE1NDEtNDE4Ni1iM2Y1LTI3ZjlmNjVkMmFjOBgAIAAoADDIyvza+jE4wt6f5ZIxQMLen+WSMUoceXBjQWZCdmJGRVR1eFJ6Tk5sOEEzbS9JVVhRPVofIh30U2dhRXIvdE5LUmp5S29UWXo5UFhwK3VTOFdRPWW7pY7Ywj4CYAUSrAEIFRKnAQocd1hZQ29rRzlQZ2tLTzRONDFWQ2hCYkt6OXRNPRIkYTFlZGQyNzItZDUzOC00NjYzLWIwZjQtNjI3NzI3MDU0NzIyGAAgACgAMJ7Yn+WSMTij3J/lkjFAo9yf5ZIxShw3SnBsUHArNTJHVUM0NDZLeDh4aHYzV2ZnS2c9Wh4iHFp6MmEvSXlqWDNIYkgzZ2M5RjBlQ29LaElmQT1lAAAAAMI+AmAFEqwBCAcSpwEKHFllWndDSk9hZUtyYmVuM2VRNHJ4ajlMeElnaz0SJDdmM2M1Y2UwLTJkZmYtNGU2MS05MDFhLTE0N2JiZTE2ZWZmMRgAIAAoADCl2J/lkjE46N2f5ZIxQOjdn+WSMUocN29yS2E0Rm9lMEg1dlJML1g2ankvNGl2UmN3PVoeIhxPOU5MRkU3K0tRZlE0ZnFBZ25BeXFyWERuNms9ZQAAAADCPgJgBRKtAQgJEqgBChxhUnlVWFN5RWhQUCtMVjh1NUdCeU1XQ3Qyb009EiRkYmNlODFiOS1kNmE1LTQ3NjUtYjgwYy1jNzZkZGViM2VlOTYYACAAKAAwx8r82voxOMrdn+WSMUDK3Z/lkjFKHExFdDJ2anBxQk1pc2tXcE1TRzFheXdWc0ttbz1aHyId021BV09NS1Z1UkRSTWNJTnMvbmt4c2VTQ2VWST1lRqeutcI+AmAFEq0BCA4SqAEKHGpxZkZjbnkyTjdmUURtZEZSUnN3TVhwOFdOOD0SJGJlYTkyNzMzLTE5ZmMtNDk2OS04YTliLTRiZTE5ZDM1ZmIwNRgAIAAoADCh2J/lkjE49tyf5ZIxQPbcn+WSMUocWERNWlhoNm1VRVJNeXlHWjZCUmhMTml2bG5JPVofIh3/eTk5RmtJU3IzVzU0Vng3RzY2SW5QU2hNcVVjPWWnHNIZwj4CYAUSrAEIBhKnAQocU3VsVm5ENjYyUGFCRGY0eWVZQ0JtRTVhYmpzPRIkNTQ2ZjcyZGItMWIzYS00NDEwLTljOWEtYTQ2NzdkN2YwZGIwGAAgACgAMJvan7qyMTjf3p/lkjFA396f5ZIxShw4SWlaM0tXR1ZOcm4zdk9OZlgzL2ZSVmFJY1E9Wh4iHDJ3b0tnWWpmWUV2dmV2a1hxVU15M1FLaWZOUT1lAAAAAMI+AmAFEqwBCBQSpwEKHG5RMXNLOHh2akF5YkZxM0N3dDQwaUYvY25zdz0SJDZiYzZhMDc1LTA2NzUtNDFkMy04ZDllLTE1OTA0Yjc3ODdkYxgAIAAoADCj2J/lkjE4rt2f5ZIxQK7dn+WSMUocVUl1QVlMU1BmeXpJSjVHZkxETkJtanlYaE9JPVoeIhxTYjZaK2RTaVM0U3RQNGk5aXB3TXh4Y0lSUFk9ZQAAAADCPgJgBRKOAQgBEokBChx5eEovNmZ2a2VjcjdrcDVFUXpCNHRXTHBkYkU9EiRjMWEyYzJjMS1hMWQwLTU2ODktYTQ5Yy1iYzNlZDFiYzkyYzEYACAAKAAw8PfN7bcvOOCGpaLtL0DghqWi7S9KHGFSQ1dMZ2hGOWI1SW5xS0lEdnVKL2p2UWtGYz1aAGUAAAAAwj4CYAAwADgA",
+   "version": 1
+}
