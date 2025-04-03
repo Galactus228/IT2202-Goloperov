@@ -76,3 +76,4 @@ class _AreaCalculatorScreenState extends State<AreaCalculatorScreen> {
     );
   }
 }
+
