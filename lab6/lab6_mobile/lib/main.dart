@@ -9,10 +9,6 @@ class AreaCalculatorApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'Калькулятор площади',
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-      ),
       home: AreaCalculatorScreen(),
     );
   }
@@ -29,6 +25,17 @@ class _AreaCalculatorScreenState extends State<AreaCalculatorScreen> {
   final GlobalKey<FormState> _formKey = GlobalKey<FormState>();
   String _resultText = 'Задайте параметры';
 
+  String? _validateInput(String? value) {
+    if (value == null || value.isEmpty) {
+      return 'Введите значение';
+    }
+    final doubleValue = double.tryParse(value);
+    if (doubleValue == null || doubleValue <= 0) {
+      return 'Введите значение';
+    }
+    return null;
+  }
+
   void _calculateArea() {
     if (_formKey.currentState!.validate()) {
       double width = double.parse(_widthController.text);
@@ -38,32 +45,15 @@ class _AreaCalculatorScreenState extends State<AreaCalculatorScreen> {
       setState(() {
         _resultText = 'S = $width * $height = $area';
       });
-
-      ScaffoldMessenger.of(context).showSnackBar(
-        SnackBar(
-          content: Text('Вычисление успешно!'),
-          duration: Duration(seconds: 2),
-        ),
-      );
     }
   }
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: PreferredSize(
-        preferredSize: Size.fromHeight(56.0),
-        child: Container(
-          color: Colors.blue,
-          alignment: Alignment.centerLeft,
-          padding: EdgeInsets.symmetric(horizontal: 16.0),
-          child: SafeArea(
-            child: Text(
-              'Калькулятор площади',
-              style: TextStyle(color: Colors.white, fontSize: 20, fontWeight: FontWeight.bold),
-            ),
-          ),
-        ),
+      appBar: AppBar(
+        title: Text('Калькулятор площади', style: TextStyle(color: Colors.white)),
+        backgroundColor: Colors.blue,
       ),
       body: Padding(
         padding: const EdgeInsets.all(16.0),
@@ -72,105 +62,41 @@ class _AreaCalculatorScreenState extends State<AreaCalculatorScreen> {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              Row(
-                children: [
-                  Text('Ширина (мм):'),
-                  SizedBox(width: 10),
-                  Expanded(
-                    child: Column(
-                      children: [
-                        TextFormField(
-                          controller: _widthController,
-                          keyboardType: TextInputType.number,
-                          textAlign: TextAlign.left,
-                          decoration: InputDecoration(
-                            border: InputBorder.none,
-                            enabledBorder: UnderlineInputBorder(
-                              borderSide: BorderSide(color: Colors.black),
-                            ),
-                          ),
-                          validator: (value) {
-                            if (value == null || value.isEmpty) {
-                              return 'Задайте Ширину';
-                            }
-                            if (double.tryParse(value) == null) {
-                              return 'Задайте Ширину';
-                            }
-                            return null;
-                          },
-                        ),
-                      ],
-                    ),
-                  ),
-                ],
+              Text('Ширина (мм):'),
+              TextFormField(
+                controller: _widthController,
+                keyboardType: TextInputType.number,
+                validator: _validateInput,
               ),
               SizedBox(height: 10),
-              Row(
-                children: [
-                  Text('Высота (мм):'),
-                  SizedBox(width: 10),
-                  Expanded(
-                    child: Column(
-                      children: [
-                        TextFormField(
-                          controller: _heightController,
-                          keyboardType: TextInputType.number,
-                          textAlign: TextAlign.left,
-                          decoration: InputDecoration(
-                            border: InputBorder.none,
-                            enabledBorder: UnderlineInputBorder(
-                              borderSide: BorderSide(color: Colors.black),
-                            ),
-                          ),
-                          validator: (value) {
-                            if (value == null || value.isEmpty) {
-                              return 'Задайте Высоту';
-                            }
-                            if (double.tryParse(value) == null) {
-                              return 'Задайте Высоту';
-                            }
-                            return null;
-                          },
-                        ),
-                      ],
-                    ),
-                  ),
-                ],
+              Text('Высота (мм):'),
+              TextFormField(
+                controller: _heightController,
+                keyboardType: TextInputType.number,
+                validator: _validateInput,
               ),
               SizedBox(height: 20),
               Center(
-                child: SizedBox(
-                  width: 140,
-                  height: 50,
-                  child: ElevatedButton(
-                    onPressed: _calculateArea,
-                    style: ElevatedButton.styleFrom(
-                      backgroundColor: Colors.blue,
-                      shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(8),
-                      ),
+                child: ElevatedButton(
+                  onPressed: _calculateArea,
+                  style: ElevatedButton.styleFrom(
+                    backgroundColor: Colors.blue,
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(8),
                     ),
-                    child: Text(
-                      'Вычислить',
-                      style: TextStyle(color: Colors.white, fontSize: 16),
-                    ),
+                    padding: EdgeInsets.symmetric(horizontal: 24, vertical: 16),
                   ),
+                  child: Text('Вычислить', style: TextStyle(color: Colors.white)),
                 ),
               ),
               SizedBox(height: 20),
-              Center(
-                child: Text(
-                  _resultText,
-                  textAlign: TextAlign.center,
-                  style: TextStyle(fontSize: 18),
-                ),
-              ),
+              Center(child: Text(_resultText, style: TextStyle(fontSize: 18))),
             ],
           ),
         ),
       ),
     );
   }
-}
+} 
 
 
