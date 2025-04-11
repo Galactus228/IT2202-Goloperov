@@ -127,3 +127,66 @@ class NewsList extends StatelessWidget {
     );
   }
 }
+class NewsCard extends StatelessWidget {
+  final NewsItem newsItem;
+  final String cleanedTitle;
+  final String cleanedText;
+
+  const NewsCard({
+    Key? key,
+    required this.newsItem,
+    required this.cleanedTitle,
+    required this.cleanedText,
+  }) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Card(
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.stretch,
+        children: [
+          if (newsItem.previewPicture.isNotEmpty)
+            ClipRRect(
+              borderRadius: const BorderRadius.vertical(top: Radius.circular(12)),
+              child: Image.network(
+                newsItem.previewPicture,
+                fit: BoxFit.cover,
+                errorBuilder: (context, error, stackTrace) {
+                  return const SizedBox(
+                    height: 150,
+                    child: Center(child: Text('Изображение не доступно')),
+                  );
+                },
+              ),
+            ),
+          Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: Text(
+              newsItem.date,
+              style: const TextStyle(
+                fontSize: 12,
+                color: Colors.grey,
+                fontWeight: FontWeight.w500,
+              ),
+            ),
+          ),
+          Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 8.0),
+            child: Text(
+              cleanedTitle,
+              style: const TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
+            ),
+          ),
+          Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 8.0, vertical: 4.0),
+            child: Text(
+              cleanedText,
+              style: const TextStyle(fontSize: 14),
+            ),
+          ),
+          const SizedBox(height: 8),
+        ],
+      ),
+    );
+  }
+}
