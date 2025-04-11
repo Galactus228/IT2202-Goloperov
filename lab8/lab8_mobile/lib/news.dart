@@ -51,3 +51,79 @@ class NewsItem {
     );
   }
 }
+void main() {
+  HttpOverrides.global = CustomHttpOverrides();
+  runApp(const MyApp());
+}
+
+class MyApp extends StatelessWidget {
+  const MyApp({Key? key}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      title: 'Лента новостей КубГАУ',
+      debugShowCheckedModeBanner: false,
+      theme: ThemeData(
+        primarySwatch: Colors.green,
+        scaffoldBackgroundColor: Colors.white,
+        appBarTheme: const AppBarTheme(
+          backgroundColor: Colors.green,
+          foregroundColor: Colors.white,
+        ),
+        cardTheme: CardTheme(
+          color: Colors.white,
+          margin: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+          shape: RoundedRectangleBorder(borderRadius: BorderRadius.all(Radius.circular(12))),
+          elevation: 4,
+        ),
+      ),
+      home: const NewsHomePage(),
+    );
+  }
+}
+
+class NewsHomePage extends StatelessWidget {
+  const NewsHomePage({Key? key}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: const Text('Лента новостей КубГАУ'),
+      ),
+      body: FutureBuilder<List<NewsItem>>(
+        future: fetchNews(http.Client()),
+        builder: (context, snapshot) {
+          if (snapshot.connectionState == ConnectionState.waiting) {
+            return const Center(child: CircularProgressIndicator());
+          } else if (snapshot.hasError) {
+            return const Center(child: Text('Ошибка запроса!'));
+          } else if (snapshot.hasData) {
+            return NewsList(newsItems: snapshot.data!);
+          } else {
+            return const Center(child: Text('Нет данных'));
+          }
+        },
+      ),
+    );
+  }
+}
+class NewsList extends StatelessWidget {
+  const NewsList({Key? key, required this.newsItems}) : super(key: key);
+  final List<NewsItem> newsItems;
+
+  @override
+  Widget build(BuildContext context) {
+    return ListView.builder(
+      itemCount: newsItems.length,
+      itemBuilder: (context, index) {
+        final item = newsItems[index];
+        final cleanedTitle = intl.Bidi.stripHtmlIfNeeded(item.title);
+        final cleanedText = intl.Bidi.stripHtmlIfNeeded(item.previewText);
+
+        return NewsCard(newsItem: item, cleanedTitle: cleanedTitle, cleanedText: cleanedText);
+      },
+    );
+  }
+}
